@@ -10,3 +10,15 @@ Usage
     console.log(arg1, arg2, ...)
 
 
+Todo
+====
+
+###Error detail
+
+Means the source filename and line number.
+
+###minimize/toggle
+
+Minimize to an icon and recover the console-panel.
+
+Explore hide and show methods and implement with keyboard shortcut.
