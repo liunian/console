@@ -1,39 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Console</title>
-	<meta charset="utf-8" />
+    <title>Console</title>
+    <meta charset="utf-8" />
 </head>
 <body>
-	<div id="t">test</div>
-	<script src="console.js" type="text/javascript"></script>
-	<script type="text/javascript">
+    <div id="t">test</div>
+    <script src="console.js" type="text/javascript"></script>
+    <script type="text/javascript">
         var console = console2;
         var undef, varNull = null;
         console.log(undef, varNull);
 
-		console.log('abc');
+        console.log('abc');
 
-		var b = true;
-		console.log(b);
+        var b = true;
+        console.log(b);
 
-		var a = [1, 2, 3, 0, true, false, '0', ['inner', 'also']];
+        var a = [1, 2, 3, 0, true, false, '0', ['inner', 'also']];
         a.length = 10;
-		console.log(a);
+        console.log(a);
 
-		var o = {
-			'a': 1,
-			'b': 2,
+        var o = {
+            'a': 1,
+            'b': 2,
             'c': 3,
             'd': function() {}
-		};
-		console.log(o);
+        };
+        console.log(o);
 
-		var n = document.getElementById('t');
-		console.log(n);
+        var n = document.getElementById('t');
+        console.log(n);
 
-		console.log('a', 'b', 'c');
-		console.log(a, b, o, n);
+        console.log('a', 'b', 'c');
+        console.log(a, b, o, n);
 
         console.log('&amp;&lt;<>');
 
@@ -41,6 +41,6 @@
         //console.log(window);
 
         console.log(document.body);
-	</script>
+    </script>
 </body>
 </html>
