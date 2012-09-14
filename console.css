@@ -7,17 +7,17 @@
 }
 .console-panel{
     font: normal normal 12px/22px consolas, mono, courier;
-	position:absolute;
-	bottom:0;
-	right:0;
-	padding:0;
+    position:absolute;
+    bottom:0;
+    right:0;
+    padding:0;
     margin:0;
     border:none;
     background:white;
-	color:#333;
-	width:600px;
+    color:#333;
+    width:600px;
     height:200px;
-	overflow:hidden;
+    overflow:hidden;
     z-index:999;
 }
 .console-panel-inner{
@@ -49,10 +49,10 @@
     line-height:1.5em;
 }
 .console-log-line{
-	padding:0 10px;
-	border-style:solid;
-	border-color:#555;
-	border-width:0 0 1px;
+    padding:0 10px;
+    border-style:solid;
+    border-color:#555;
+    border-width:0 0 1px;
     background: url(console.png) no-repeat 0 -13px;
 }
 .console-log-line-error{
