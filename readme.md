@@ -17,12 +17,14 @@ Usage
 Todo
 ----
 
-###Error detail
+1. Error detail
 
-Means the source filename and line number.
+    Means the source filename and line number.
 
-###minimize/toggle
+2. minimize/toggle
 
-Minimize to an icon and recover the console-panel.
+    Minimize to an icon and recover the console-panel.
 
-Explore hide and show methods and implement with keyboard shortcut.
+    Explore hide and show methods and implement with keyboard shortcut.
+
+3. demo screenshot
