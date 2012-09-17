@@ -189,23 +189,14 @@
     var Console = function(cssPath) {
         this.hInnerPadding = 5 * 2;
         this.argSeperator = '    ';
-        this.cssPath = cssPath || 'console.css';
         this.UI = {};
         this._init();
     };
 
     Console.prototype = {
         _init: function() {
-            this._loadStyle();
             this._initUI();
             this._bind();
-        },
-        _loadStyle: function() {
-            var ele = document.createElement('link');
-            ele.rel = 'stylesheet';
-            ele.type = 'text/css';
-            ele.href = this.cssPath;
-            document.getElementsByTagName('head')[0].appendChild(ele);
         },
         _initUI: function() {
             var panel = createEle('div', {className: 'console-panel'}),
