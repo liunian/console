@@ -448,7 +448,7 @@
             return bool ? 'true' : 'false';
         },
         _renderString: function(str) {
-            return str;
+            return '"' + str + '"';
         },
         _renderSpecial: function(o) {
             return o === null ? 'null' : 'undefined';
