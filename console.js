@@ -12,7 +12,7 @@
     // comment following one line to enable it in chrome
     // and other browsers which has build-in console
     // if doing this, try to modify the global variable's name in the last
-//    if (typeof window.console !== 'undefined') return;
+    if (typeof window.console !== 'undefined') return;
 
     var _toStr = Object.prototype.toString;
 
