@@ -12,7 +12,7 @@
     // comment following one line to enable it in chrome
     // and other browsers which has build-in console
     // if doing this, try to modify the global variable's name in the last
-    if (typeof window.console !== 'undefined') return;
+//    if (typeof window.console !== 'undefined') return;
 
     var _toStr = Object.prototype.toString;
 
@@ -195,6 +195,7 @@
 
     Console.prototype = {
         _init: function() {
+            this._userDefined = true;
             this._initUI();
             this._bind();
         },
@@ -447,7 +448,7 @@
             return bool ? 'true' : 'false';
         },
         _renderString: function(str) {
-            return '"' + str + '"';
+            return str;
         },
         _renderSpecial: function(o) {
             return o === null ? 'null' : 'undefined';
@@ -456,10 +457,10 @@
             return obj.toString();
         },
         _logError: function(str) {
-            this._appendLog(this._render(str).replace(/^"(.*)"$/, '$1'), 'error');
+            this._appendLog(this._render(str), 'error');
         },
         _logCmd: function(str) {
-            this._appendLog(this._render(str).replace(/^"(.*)"$/, '$1'), 'cmd');
+            this._appendLog(this._render(str), 'cmd');
         },
         log: function() {
             try {
