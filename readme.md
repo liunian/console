@@ -7,7 +7,7 @@ Console for IE6
 Usage
 -----
 
-1. 把 css、js 和 png 文件下载到同一目录
+1. 下载 css、js 和 png 文件（png背景图片应和css同目录）
 2. 在使用 `console.log` 前把 `console.min.js` 或 `console.js` 载进去（建议紧跟着 `<body>` 标签）
 3. js 中使用 `console.log(arg1, arg2, ...)` 语句来输出
 
