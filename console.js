@@ -79,7 +79,7 @@
     var Event = {
         on: function(obj, type, fn) {
             var wrapFn = function(e) {
-                var e = e || window.event;
+                e = e || window.event;
                 fn.call(obj, e);
             };
 
@@ -183,6 +183,7 @@
      * The Console Class
      */
     var Console = function(cssPath) {
+        this.debug = true;
         this.hInnerPadding = 5 * 2;
         this.argSeperator = '    ';
         this.UI = {};
@@ -459,6 +460,8 @@
             this._appendLog(this._render(str), 'cmd');
         },
         log: function() {
+            if(!this.debug) return;
+
             try {
                 var renderedArgs = [],
                     i = 0,
